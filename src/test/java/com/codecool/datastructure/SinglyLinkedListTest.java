@@ -42,6 +42,21 @@ class SinglyLinkedListTest {
     }
 
     @Test
+    void testInsert4() {
+        SinglyLinkedList ll = new SinglyLinkedList();
+
+        ll.insert(0, 123);
+        ll.insert(0, 234);
+        ll.insert(0, 345);
+        ll.insert(1, 456);
+
+        assertEquals(345, ll.access(0));
+        assertEquals(456, ll.access(1));
+        assertEquals(234, ll.access(2));
+        assertEquals(123, ll.access(3));
+    }
+
+    @Test
     void testDelete1() {
         SinglyLinkedList ll = new SinglyLinkedList();
         ll.insert(0, 123);
