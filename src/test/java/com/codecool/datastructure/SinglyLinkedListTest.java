@@ -11,7 +11,6 @@ class SinglyLinkedListTest {
         SinglyLinkedList ll = new SinglyLinkedList();
 
         ll.insert(0, 123);
-
         assertEquals(123, ll.access(0));
     }
 
